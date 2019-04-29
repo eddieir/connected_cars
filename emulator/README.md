@@ -5,9 +5,7 @@
 
 
 
-The core of the simultaor is Python running a local web server through
-[Flask](http://flask.pocoo.org/docs/installation).  The user interface is
-accessed through a web browser pointed at localhost.f
+The core of the simultaor is Python running a local web server through Flask.The user interface is accessed through a web browser pointed at localhost.
 
 
 In order to Install the simulator you could clone it from the following link:
