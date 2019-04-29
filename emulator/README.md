@@ -52,6 +52,8 @@ templates/vehicle_controls.html
 These provide the html code for the user interface.  They provide the framework
 in which the jQuery components work.
 
+
+
 static/simulator_scripts.js
 
 This has all the JavaScript code for the UI.  The majority of this file is code
