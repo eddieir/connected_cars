@@ -31,7 +31,7 @@ class EnablerConnection():
         s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         s.bind((this_ip, self.enabler_listening_port))
         s.listen(1)
-        print("Listening for OpenXC Enabler on " + this_ip + ":" +
+        print("Listening to Enabler on " + this_ip + ":" +
               str(self.enabler_listening_port))
         while True:
             conn, addr = s.accept()
