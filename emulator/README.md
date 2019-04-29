@@ -6,7 +6,8 @@
 
 
 The core of the simultaor is Python running a local web server through
-Flask.  The user interface is accessed through a web browser pointed at localhost.  
+[Flask](http://flask.pocoo.org/docs/installation).  The user interface is
+accessed through a web browser pointed at localhost.f
 
 
 In order to Install the simulator you could clone it from the following link:
@@ -48,8 +49,6 @@ templates/vehicle_controls.html
 
 These provide the html code for the user interface.  They provide the framework
 in which the jQuery components work.
-
-
 
 static/simulator_scripts.js
 
