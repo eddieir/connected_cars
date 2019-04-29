@@ -23,8 +23,6 @@ After installation of all dependecies we could run the simulator by typing ./sim
 
 To open the UI, open a browser and navigate to http://localhost:50000/
 
-To connect with an Android device, open the Enabler activity, open the settings,
-choose Data Sources, and enable "Use a network device".
 
 Set the host address to the address of the machine running the simulator and set
 the port to 50001. The terminal running the simulator should indicate that it
@@ -73,29 +71,4 @@ The State Manager object receives incoming user input, monitors the dynamics
 model, and sends data to any connected Enablers.  It creates and stores the
 Dynamics Model object and Enabler Connection object.  It creates and maintains
 the loops that send the regular data to the Enabler.
-
-enabler_connection.py
-
-The Enabler Connection object runs a loop that listens for incoming connections
-from Android devices running the OpenXC Enabler.  It also provides the routines
-for moving data from the State Manager to the Enablers.
-
-### Dynamics Model
-
-The Dynamics Model iterates at 100Hz.  Data is kept in the Physics Model with a
-higher precision than is used in the CAN traffic.  (This will help reproduce
-conditions that have created failures in vehicles, but did not fail with the
-current simulator.)
-
-dynamics_model.py
-
-This object initializes all the simulation data, and maintains the current
-state.  The 100HZ iterate loop calls the Iterate() functions for each of the
-data points.
-
-data/data_calc.py
-
-This is the base class for each of the data types in the Dynamics Model.  Each
-data type in that directory overloads the iterate() function with the proper way
-to reach the next snapshot of that data.
 
